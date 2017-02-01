@@ -18,5 +18,5 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
         data <- rbind(data, monitor)
     }
     setwd(pd)
-    mean(data[,which(colnames(blah) == pollutant)], na.rm = T)
+    mean(data[,which(colnames(data) == pollutant)], na.rm = T)
 }
